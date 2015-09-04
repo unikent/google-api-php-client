@@ -172,8 +172,6 @@ class Google_IO_Curl extends Google_IO_Abstract
    */
   protected function needsQuirk()
   {
-    $ver = curl_version();
-    $versionNum = $ver['version_number'];
-    return $versionNum < Google_IO_Curl::NO_QUIRK_VERSION;
+    return false;
   }
 }
